@@ -1,0 +1,209 @@
+body {
+  color: #28262C;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;;
+  background-color: rgba(255, 253, 235, 0.2);
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 64px;
+  letter-spacing: -1px;
+}
+
+h2 {
+  color: #5B7553;
+  font-size: 32px;
+  font-family: 'Cabin', sans-serif;
+  letter-spacing: -0.5px;
+}
+h3 {
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 3px;
+}
+
+.card-content {
+  background-color: #F7F3F2;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.1);
+  margin: 40px 100px;
+}
+
+#profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 40%;
+  opacity: 0.8;
+}
+
+.services li {
+  list-style: none;
+  display: inline-block;
+  width: 33%;
+}
+
+.services a {
+  display: block;
+  padding: 10px 60px;
+  font-weight: 500;
+  font-size: 24px;
+  font-family: 'Cabin', sans-serif;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #28262C;
+  background-color: #F7F3F2;
+  border-radius: 4px;
+  box-shadow: 0, 10px, 30px rgba(0,0,0,0.1);
+}
+
+.services a:hover {
+  color: #F7F3F2;
+  background-color: #5A5562;
+  opacity: 0.8;
+}
+
+ul{
+  padding: 0px;
+}
+
+.button-orange {
+  padding: 5px 10px;
+  background-color: #C4A69D;
+  color: #5A5562;
+  border-radius: 4px;
+  box-shadow: 0, 10px, 30px rgba(0,0,0,0.1);
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.button-orange:hover {
+  color: #F7F3F2;
+  background-color: #113940;
+  opacity: 0.6;
+}
+
+.socials li {
+  list-style: none;
+  display: inline-block;
+}
+
+.fa-brands {
+  color: #C4A69D;
+  box-shadow: 0, 10px 30px rgba(0,0,0,0.1);
+  font-size: 64px;
+  padding: 10px;
+  transition: 0.3s;
+  border-radius: 10px;
+  margin: 0px 5px;
+}
+
+.fa-brands:hover {
+  color: #F7F3F2;
+  background-color: #113940;
+  opacity: 0.6;
+}
+
+input, label {
+  padding: 0 5px;
+
+}
+
+
+
+/* Media queries section */
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 800px;
+  }
+  p {
+    display: inline;
+  }
+
+  .services li {
+    list-style: none;
+    display: inline;
+    width: 33%;
+  }
+
+  .services a {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px 0;
+    width: 50%;
+  }
+
+  .form-format {
+    display: flex;
+  }
+  .form-items {
+    display: block;
+  }
+
+  .button-orange {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .services a {
+    font-size: 16px;
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+
+  .form-format{
+    display: inline-block;
+  }
+
+  .button-orange {
+    margin: 5px 10px;
+  }
+
+  .socials li {
+    list-style: none;
+    display: block;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  .card-content {
+    margin: 20px;
+  }
+
+}
